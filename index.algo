@@ -1,0 +1,20 @@
+ALGORITHM Bilel
+VAR
+    a1:STRING;
+    l1, Nbr, Nbr2 , i :INTEGER := 0;
+BEGIN
+   
+        WRITE ("enter a word");
+        READ (a1);
+    WHILE (a1[i] <> ".") DO
+        l1 := l1 + 1;
+        IF (a1[i] = "a" OR a1[i] = "A" OR a1[i] = "O" OR a1[i] = "o" OR a1[i] = "U" OR a1[i] = "u"  OR a1[i] = "Y" OR a1[i] = "y" OR a1[i] = "E" OR a1[i] = "e" OR a1[i] = "I" OR a1[i] = "i") THEN
+        Nbr2 := Nbr2+1 
+        END_IF
+        IF (a1[i] = " " ) THEN
+            Nbr := Nbr + 1
+        END_IF
+        i:= i + 1
+    END_WHILE
+    WRITE (l1, Nbr, Nbr2)
+END
